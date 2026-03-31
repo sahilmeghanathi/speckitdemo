@@ -1,50 +1,42 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# doit_speckit Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Clean Code
+Write readable, maintainable, and well-structured code. Enforce consistent formatting, naming conventions, and modular organization. Prioritize clarity and simplicity over clever implementations. Code should be self-documenting through clear variable names and logical structure.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Simple UX
+Prioritize user experience with intuitive interfaces and minimal cognitive load. Every UI element must serve a clear purpose. Remove unnecessary features or complexity that doesn't directly serve user needs. Follow established design patterns for familiarity.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Responsive Design
+Ensure all UI components work seamlessly across desktop, tablet, and mobile devices. Use fluid layouts, flexible typography, and adaptive breakpoints. Mobile-first approach is preferred. All features must be accessible and functional on all screen sizes.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Minimal Dependencies
+Keep the dependency tree lean and well-justified. Only add external packages when they provide significant value and cannot be reasonably implemented in-house. Review and audit dependencies regularly. Prefer built-in platform features over external libraries when practical.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Technology Stack
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+**Framework & Runtime**: Next.js 16.2.1, React 19.2.4, React DOM 19.2.4
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+**Styling**: Tailwind CSS 4.x
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+**Language**: TypeScript 5.x
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+**Linting**: ESLint 9.x
+
+All versions must align with the project's `package.json` at the time of development.
+
+## Quality & Development Standards
+
+- **Code Review**: All changes must be reviewed for adherence to Clean Code and Responsive Design principles.
+- **No Testing**: Testing is explicitly excluded from this project. No unit tests, integration tests, or end-to-end tests are required or permitted as part of the development process.
+- **Linting**: All code must pass ESLint checks before merge.
+- **Performance**: Prioritize fast load times and smooth user interactions.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other development guidance and practices. All features and implementations must comply with these four core principles. When principles appear to conflict, prioritize them in order: Clean Code → Simple UX → Responsive Design → Minimal Dependencies.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Amendments to this Constitution require explicit documentation and ratification. The constitution version will follow semantic versioning (MAJOR.MINOR.PATCH).
+
+**Version**: 1.0.0 | **Ratified**: 2026-03-31 | **Last Amended**: 2026-03-31
